@@ -1,0 +1,160 @@
+:root{
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+    --spacing-extra-large: 32px;
+
+    --color-primary-dark: #182c61;
+    --color-over-primary: #ecf0f1;
+    --color-primary-light: #314e9e;
+
+    --menu-font-size: 18px;
+
+    --icons-height: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: var(--spacing-medium) 0;
+    background-color: var(--color-primary-dark);
+    color: var(--color-over-primary);
+}
+
+section h2 {
+    color: var(--color-primary-dark);
+}
+
+header,
+section h2,
+section h3,
+form button {
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+
+body, 
+input, 
+textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
+header nav li {
+    display: inline;
+    margin-left: var(--spacing-medium);
+    font-size: var(--menu-font-size);
+}
+
+header nav li a {
+    color: var(--color-over-primary);
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brands-list img {
+    height: var(--icons-height);
+    margin-right: var(--spacing-small);
+}
+
+.brands-list li {
+    display: inline;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: var(--spacing-large) 0;
+    color: var(--color-primary-dark);
+}
+
+section h2 {
+    margin-bottom: var(--spacing-medium);
+}
+
+section p {
+    margin-bottom: var(--spacing-small);
+}
+
+#store-front {
+    margin-right: var(--spacing-extra-large);
+}
+
+.social-links img{
+    height: var(--icons-height);
+}
+
+.social-links li {
+    display: inline;
+    margin-right: var(--spacing-small);
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+#contact .container{
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: var(--spacing-small);
+    padding: var(--spacing-small);
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: var(--spacing-medium);
+}
+
+form button {
+    background-color: var(--color-primary-dark);
+    color: var(--color-over-primary);
+    border: none;
+}
+
+form button:hover {
+    background-color: var(--color-primary-light);
+    cursor: pointer;
+}
+
+input:focus,
+textarea:focus {
+    outline-color: var(--color-primary-dark);
+}
+
+footer {
+    background-color: var(--color-primary-dark);
+    color: var(--color-over-primary);
+    padding: var(--spacing-medium) 0;
+}
